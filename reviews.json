@@ -1,0 +1,131 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. Alice Johnson",
+        "subject": "Introduction to Psychology",
+        "stars": 5,
+        "reviews": "Dr. Johnson is incredibly engaging and makes complex concepts easy to understand. Her lectures are always interactive and thought-provoking."
+      },
+      {
+        "professor": "Dr. Bob Smith",
+        "subject": "Advanced Calculus",
+        "stars": 4,
+        "reviews": "Dr. Smith knows his material well, but his teaching style can be a bit dry. The course is challenging but rewarding."
+      },
+      {
+        "professor": "Dr. Carol Lee",
+        "subject": "Organic Chemistry",
+        "stars": 3,
+        "reviews": "Dr. Lee is knowledgeable, but her lectures can be hard to follow. The course requires a lot of self-study."
+      },
+      {
+        "professor": "Dr. David Brown",
+        "subject": "Introduction to Sociology",
+        "stars": 5,
+        "reviews": "Dr. Brown is fantastic! His lectures are engaging, and he encourages open discussions. A very approachable professor."
+      },
+      {
+        "professor": "Dr. Emily Davis",
+        "subject": "Macroeconomics",
+        "stars": 4,
+        "reviews": "Dr. Davis explains economic theories clearly and provides useful real-world examples. The course workload is manageable."
+      },
+      {
+        "professor": "Dr. Frank Wilson",
+        "subject": "Data Structures",
+        "stars": 2,
+        "reviews": "Dr. Wilson's lectures are often confusing, and he doesn't offer much help outside of class. The course is difficult."
+      },
+      {
+        "professor": "Dr. Grace Martinez",
+        "subject": "Modern Art History",
+        "stars": 5,
+        "reviews": "Dr. Martinez is passionate about art and brings history to life. Her enthusiasm is contagious and makes the class enjoyable."
+      },
+      {
+        "professor": "Dr. Henry Clark",
+        "subject": "Biochemistry",
+        "stars": 3,
+        "reviews": "Dr. Clark has a lot of knowledge, but the pace of the course is fast. It requires a lot of outside study to keep up."
+      },
+      {
+        "professor": "Dr. Iris Lewis",
+        "subject": "Microeconomics",
+        "stars": 4,
+        "reviews": "Dr. Lewis provides clear explanations and helpful examples. The course is challenging but well-organized."
+      },
+      {
+        "professor": "Dr. Jack Thompson",
+        "subject": "Quantum Physics",
+        "stars": 5,
+        "reviews": "Dr. Thompson is an excellent teacher with a knack for making complex topics accessible. His enthusiasm is infectious."
+      },
+      {
+        "professor": "Dr. Karen Wilson",
+        "subject": "Introduction to Philosophy",
+        "stars": 4,
+        "reviews": "Dr. Wilson encourages critical thinking and offers thought-provoking discussions. The course is intellectually stimulating."
+      },
+      {
+        "professor": "Dr. Larry Allen",
+        "subject": "Statistical Methods",
+        "stars": 3,
+        "reviews": "Dr. Allen is knowledgeable but the course is quite rigorous. It requires a lot of practice to master the material."
+      },
+      {
+        "professor": "Dr. Maria Gonzalez",
+        "subject": "Environmental Science",
+        "stars": 5,
+        "reviews": "Dr. Gonzalez is very passionate about the subject and provides lots of practical examples. Her classes are always engaging."
+      },
+      {
+        "professor": "Dr. Nathan Carter",
+        "subject": "Introduction to Programming",
+        "stars": 4,
+        "reviews": "Dr. Carter's explanations are clear, and he provides helpful resources. The course is a great introduction to programming."
+      },
+      {
+        "professor": "Dr. Olivia Walker",
+        "subject": "World Literature",
+        "stars": 4,
+        "reviews": "Dr. Walker is knowledgeable and brings a lot of depth to the discussions. The reading list is diverse and thought-provoking."
+      },
+      {
+        "professor": "Dr. Peter Robinson",
+        "subject": "American History",
+        "stars": 5,
+        "reviews": "Dr. Robinson makes history come alive with his engaging storytelling. The class is both informative and enjoyable."
+      },
+      {
+        "professor": "Dr. Quinn Adams",
+        "subject": "Geology",
+        "stars": 3,
+        "reviews": "Dr. Adams is knowledgeable, but the lectures can be monotonous. The course content is interesting but requires effort to keep up."
+      },
+      {
+        "professor": "Dr. Rachel Scott",
+        "subject": "Calculus III",
+        "stars": 2,
+        "reviews": "Dr. Scott's teaching style is not very effective. The course material is difficult, and extra help is hard to come by."
+      },
+      {
+        "professor": "Dr. Samuel Harris",
+        "subject": "Genetics",
+        "stars": 4,
+        "reviews": "Dr. Harris is a great lecturer and provides plenty of examples. The course is challenging but well-structured."
+      },
+      {
+        "professor": "Dr. Tina Young",
+        "subject": "Public Speaking",
+        "stars": 5,
+        "reviews": "Dr. Young is an excellent instructor who provides constructive feedback and helps build confidence in public speaking."
+      },
+      {
+        "professor": "Dr. Ulysses Grant",
+        "subject": "Ethics",
+        "stars": 4,
+        "reviews": "Dr. Grant facilitates engaging discussions and encourages critical thinking. The course is challenging but rewarding."
+      }
+    ]
+  }
+  
