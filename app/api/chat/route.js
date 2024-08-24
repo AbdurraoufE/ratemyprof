@@ -17,6 +17,7 @@ const systemPrompt = `
 
 `;
 
+// Step 1: Read the data
 export async function POST(req) {
   const data = await req.json(); // takes our response data
   const pc = new Pincecone({
@@ -39,6 +40,7 @@ export async function POST(req) {
     vector: embedding.data[0].embedding,
   });
 
+  // Step 2: Make data/embedding
   let resultString =
     "\n\nReturned Results from vector db (done automatically): ";
   results.matches.forEach((match) => {
@@ -52,6 +54,7 @@ export async function POST(req) {
         `;
   });
 
+  // Step 3: Generate result with embedding with results
   const lastMessage = data[data.length - 1];
   const lastMessageContent = lastMessage.content + resultString;
   const lastDataWithoutLastMessage = data.slice(0, data.length - 1);
