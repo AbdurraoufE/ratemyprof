@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { Pinecone } from "@pinecone-database/pinecone";
+import { Pinecone, PineconeClient } from "@pinecone-database/pinecone";
 import OpenAI from "openai";
 
 const systemPrompt = `
@@ -20,24 +20,32 @@ const systemPrompt = `
 // Step 1: Read the data
 export async function POST(req) {
   const data = await req.json(); // takes our response data
-  const pc = new Pincecone({
+
+  const pc = new Pinecone({
     apiKey: process.env.PINECONE_API_KEY,
   });
 
   const index = pc.index("rag3").namespace("ns1");
-  const openai = new OpenAI();
 
-  const text = data[data.length - 1].content; //convo: last message
-  const embedding = await OpenAI.Embeddings.create({
-    model: "text-embedding-3-small",
-    input: text,
-    encoding_format: "float",
+  const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
   });
 
+  const text = data[data.length - 1].content; //convo: last message
+
+  // Generate embedding
+  const embeddingResponse = await openai.embeddings.create({
+    model: "text-embedding-3-small",
+    input: text,
+  });
+
+  const embedding = embeddingResponse.data[0].embedding;
+
+  // Query Pinecone index
   const results = await index.query({
     topK: 3,
     includeMetadata: true,
-    vector: embedding.data[0].embedding,
+    vector: embedding,
   });
 
   // Step 2: Make data/embedding
@@ -47,7 +55,7 @@ export async function POST(req) {
     resultString += `
         \n
         Professor: ${match.id}
-        Review: ${match.metadata.statrs}
+        Review: ${match.metadata.reviews}
         Subject: ${match.metadata.subject}
         Stars: ${match.metadata.stars}
         \n\n
@@ -58,17 +66,18 @@ export async function POST(req) {
   const lastMessage = data[data.length - 1];
   const lastMessageContent = lastMessage.content + resultString;
   const lastDataWithoutLastMessage = data.slice(0, data.length - 1);
+
   const completion = await openai.chat.completions.create({
     messages: [
       { role: "system", content: systemPrompt },
       ...lastDataWithoutLastMessage,
       { role: "user", content: lastMessageContent },
     ],
-    model: "gpt-4o-mini",
+    model: "gpt-4",
     stream: true,
   });
 
-  const stream = ReadableStream({
+  const stream = new ReadableStream({
     async start(controller) {
       const encoder = new TextEncoder();
       try {
