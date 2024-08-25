@@ -4,13 +4,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to all elements */
+  font-family: "PT Serif Caption", sans-serif;
 }
 
 body {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to the body */
-  background-color: #525252; /* Dark background color */
-  color: #f4f4f9; /* Light text color */
+  font-family: "PT Serif Caption", sans-serif;
+  background-color: #5a3c3c;
+  color: #f4f4f9;
 }
 
 /* Reset some default browser styles */
@@ -18,46 +18,46 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to all elements */
+  font-family: "PT Serif Caption", sans-serif;
 }
 
 body {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to the body */
-  background-color: #2f455c; /* Background color for the whole page */
+  font-family: "PT Serif Caption", sans-serif;
+  background-color: #2f455c;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden; /* Prevents scrolling */
+  overflow: hidden;
 }
 
 /* Sign-Up Page Styles */
 .sign-up-container {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up container */
+  font-family: "PT Serif Caption", sans-serif;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: #bba281; /* Dark background color */
-  width: 100%; /* Ensure full width */
+  background-color: #1e738894;
+  width: 100%;
 }
 
-/* Box styling for the sign-up form */
+/* Box styling for the sign-up form BOX*/
 .sign-up-box {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up box */
-  background-color: #d8ba93; /* Slightly lighter background */
+  font-family: "PT Serif Caption", sans-serif;
+  background-color: #2a4758a8;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgb(68, 68, 68);
+  box-shadow: 0 4px 6px rgb(63, 109, 177);
   max-width: 400px;
   width: 100%;
 }
 
 /* Title styling */
 .sign-up-title {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up title */
+  font-family: "PT Serif Caption", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -66,33 +66,33 @@ body {
 
 /* Form styling */
 .sign-up-form {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up form */
+  font-family: "PT Serif Caption", sans-serif;
   display: flex;
   flex-direction: column;
 }
 
 /* Input styling */
 .sign-up-input {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up input */
+  font-family: "PT Serif Caption", sans-serif;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: 1px solid #000000; /* Darker border */
+  border: 1px solid #000000;
   border-radius: 4px;
-  background-color: #c59e6b; /* Match box background */
-  color: #000000; /* Light text color */
+  background-color: #48869e;
+  color: #ffffff;
 }
 
 .sign-up-input::placeholder {
-  color: #ffffff; /* Placeholder color */
+  color: #ffffff;
 }
 
 /* Button styling */
 .sign-up-button {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up button */
+  font-family: "PT Serif Caption", sans-serif;
   padding: 0.75rem;
   border: none;
   border-radius: 4px;
-  background-color: #c59e6b;
+  background-color: #2b6f8a;
   color: #ffffff;
   font-size: 1rem;
   cursor: pointer;
@@ -100,34 +100,34 @@ body {
 }
 
 .sign-up-button:hover {
-  background-color: #be9257;
+  background-color: #136286;
 }
 
 /* Sign-in page styles */
 .sign-in-container {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in container */
+  font-family: "PT Serif Caption", sans-serif;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #bba281;
+  background-color: #1e738894;
 }
 
 /* Box for the sign-in page */
 .sign-in-box {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in box */
-  background-color: #d8ba93;
+  font-family: "PT Serif Caption", sans-serif;
+  background-color: #2a4758a8;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgb(68, 68, 68);
+  box-shadow: 0 4px 6px rgb(63, 109, 177);
   width: 100%;
   max-width: 400px;
 }
 
 /* Title styling */
 .sign-in-title {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in title */
+  font-family: "PT Serif Caption", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -135,30 +135,30 @@ body {
 
 /* Form styling */
 .sign-in-form {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in form */
+  font-family: "PT Serif Caption", sans-serif;
   display: flex;
   flex-direction: column;
 }
 
 /* Input styling */
 .sign-in-input {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in input */
+  font-family: "PT Serif Caption", sans-serif;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: 1px solid #000000; /* Darker border */
+  border: 1px solid #000000;
   border-radius: 4px;
-  background-color: #c59e6b; /* Match box background */
-  color: #ffffff; /* Light text color */
+  background-color: #48869e;
+  color: #ffffff;
 }
 
 .sign-in-input::placeholder {
-  color: #ffffff; /* Placeholder color */
+  color: #ffffff;
 }
 
 /* Button styling */
 .sign-in-button {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in button */
-  background-color: #c59e6b;
+  font-family: "PT Serif Caption", sans-serif;
+  background-color: #2b6f8a;
   color: #ffffff;
   border: none;
   padding: 0.75rem;
@@ -169,12 +169,12 @@ body {
 }
 
 .sign-in-button:hover {
-  background-color: #be9257;
+  background-color: #136286;
 }
 
 /* Loading and error messages */
 p {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to paragraphs */
+  font-family: "PT Serif Caption", sans-serif;
   margin-top: 1rem;
   text-align: center;
   font-size: 1rem;
@@ -182,19 +182,19 @@ p {
 
 /* Already have an account button */
 .already-account {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to already-account */
-  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
-  color: #007bff; /* Change color to a typical link color */
-  text-decoration: underline; /* Add underline to mimic link appearance */
-  font-size: 16px; /* Adjust font size as needed */
+  font-family: "PT Serif Caption", sans-serif;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 16px;
 }
 
 .already-account:hover {
-  color: #0056b3; /* Darker color on hover for better UX */
+  color: #0056b3;
 }
 
 .navbar {
-  font-family: "PT Serif Caption", sans-serif; /* Apply font to navbar */
+  font-family: "PT Serif Caption", sans-serif;
   position: fixed; 
   top: 0;          
   left: 0;         
