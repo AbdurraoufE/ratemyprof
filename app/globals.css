@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to all elements */
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to the body */
   background-color: #525252; /* Dark background color */
   color: #f4f4f9; /* Light text color */
 }
@@ -15,9 +18,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to all elements */
 }
 
 body {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to the body */
   background-color: #2f455c; /* Background color for the whole page */
   color: #ffffff;
   display: flex;
@@ -29,6 +34,7 @@ body {
 
 /* Sign-Up Page Styles */
 .sign-up-container {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up container */
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -40,6 +46,7 @@ body {
 
 /* Box styling for the sign-up form */
 .sign-up-box {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up box */
   background-color: #d8ba93; /* Slightly lighter background */
   padding: 2rem;
   border-radius: 8px;
@@ -50,6 +57,7 @@ body {
 
 /* Title styling */
 .sign-up-title {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up title */
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -58,12 +66,14 @@ body {
 
 /* Form styling */
 .sign-up-form {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up form */
   display: flex;
   flex-direction: column;
 }
 
 /* Input styling */
 .sign-up-input {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up input */
   padding: 0.75rem;
   margin-bottom: 1rem;
   border: 1px solid #000000; /* Darker border */
@@ -78,6 +88,7 @@ body {
 
 /* Button styling */
 .sign-up-button {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-up button */
   padding: 0.75rem;
   border: none;
   border-radius: 4px;
@@ -94,6 +105,7 @@ body {
 
 /* Sign-in page styles */
 .sign-in-container {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in container */
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -102,8 +114,9 @@ body {
   background-color: #bba281;
 }
 
-/* Box for the signin page */
+/* Box for the sign-in page */
 .sign-in-box {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in box */
   background-color: #d8ba93;
   padding: 2rem;
   border-radius: 10px;
@@ -114,6 +127,7 @@ body {
 
 /* Title styling */
 .sign-in-title {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in title */
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -121,12 +135,14 @@ body {
 
 /* Form styling */
 .sign-in-form {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in form */
   display: flex;
   flex-direction: column;
 }
 
 /* Input styling */
 .sign-in-input {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in input */
   padding: 0.75rem;
   margin-bottom: 1rem;
   border: 1px solid #000000; /* Darker border */
@@ -141,6 +157,7 @@ body {
 
 /* Button styling */
 .sign-in-button {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to sign-in button */
   background-color: #c59e6b;
   color: #ffffff;
   border: none;
@@ -157,14 +174,15 @@ body {
 
 /* Loading and error messages */
 p {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to paragraphs */
   margin-top: 1rem;
   text-align: center;
   font-size: 1rem;
 }
 
-
 /* Already have an account button */
 .already-account {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to already-account */
   cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
   color: #007bff; /* Change color to a typical link color */
   text-decoration: underline; /* Add underline to mimic link appearance */
@@ -176,6 +194,7 @@ p {
 }
 
 .navbar {
+  font-family: "PT Serif Caption", sans-serif; /* Apply font to navbar */
   position: fixed; 
   top: 0;          
   left: 0;         
