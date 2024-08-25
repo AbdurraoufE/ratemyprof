@@ -19,14 +19,25 @@ const SignIn = () => {
 
   const handleSignIn = async (e) => {
     e.preventDefault();
+    setError('');
     try {
-      await signInWithEmailAndPassword(email, password);
-      sessionStorage.setItem('user', true);
-      setEmail('');
-      setPassword('');
-      router.push('/');
+      const result = await signInWithEmailAndPassword(email, password);
+      if (result.user) {
+        sessionStorage.setItem('user', 'true');
+        setEmail('');
+        setPassword('');
+        router.push('/');
+      }
     } catch (error) {
-      setError(error.message);
+      let errorMessage = 'Incorrect password, please try again.';
+      if (error.code === 'auth/user-not-found') {
+        errorMessage = 'No user found with this email.';
+      } else if (error.code === 'auth/wrong-password') {
+        errorMessage = 'Incorrect password. Please try again.';
+      } else if (error.code === 'auth/invalid-email') {
+        errorMessage = 'Invalid email address.';
+      }
+      setError(errorMessage);
     }
   };
 
@@ -56,7 +67,6 @@ const SignIn = () => {
         </form>
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error}</p>}
-        {authError && <p>Error: {authError.message}</p>}
       </div>
     </div>
   );
