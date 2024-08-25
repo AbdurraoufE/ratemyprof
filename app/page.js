@@ -1,7 +1,11 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react"; 
+import { useState, useEffect } from "react"; 
 import {Box, Stack, TextField, Button} from "@mui/material"
+import { useAuthState } from "react-firebase-hooks/auth"
+import { auth } from "@/app/firebase/config"
+import { useRouter } from 'next/navigation';
+import { signOut } from 'firebase/auth';
 
 export default function Home() {
   const [messages, setMessages] = useState([
@@ -51,6 +55,22 @@ export default function Home() {
     })
   }
 
+  const [user] = useAuthState(auth);
+  const router = useRouter();
+  const [userSession, setUserSession] = useState("user");
+  const [loadingTime, setLoading] = useState(false);
+
+  // check if user is authenticated
+  if (!user && !userSession) {
+    router.push("/signup")
+  }
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setUserSession(sessionStorage.getItem("user"));
+    }
+  }, []);
+
   return (
     <Box
       width="100vw"
@@ -77,6 +97,17 @@ export default function Home() {
           overflow="auto"
           maxHeight="100%"
         >
+        <Button
+          variant="outlined"
+          sx={{color:"#000", backgroundColor:"#ff6161", "&:hover": {backgroundColor: "#f24646"}}}
+          onClick={() => {
+            signOut(auth);
+            sessionStorage.removeItem("user");
+            router.push("/signup");
+          }}
+        >
+          Sign Out
+        </Button>
           {
             messages.map((message, index) => (
               <Box 

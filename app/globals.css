@@ -3,3 +3,181 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #525252; /* Dark background color */
+  color: #f4f4f9; /* Light text color */
+}
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f455c; /* Background color for the whole page */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+/* Sign-Up Page Styles */
+.sign-up-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #bba281; /* Dark background color */
+  width: 100%; /* Ensure full width */
+}
+
+/* Box styling for the sign-up form */
+.sign-up-box {
+  background-color: #d8ba93; /* Slightly lighter background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgb(68, 68, 68);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Title styling */
+.sign-up-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Form styling */
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input styling */
+.sign-up-input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #000000; /* Darker border */
+  border-radius: 4px;
+  background-color: #c59e6b; /* Match box background */
+  color: #000000; /* Light text color */
+}
+
+.sign-up-input::placeholder {
+  color: #ffffff; /* Placeholder color */
+}
+
+/* Button styling */
+.sign-up-button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #c59e6b;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-button:hover {
+  background-color: #be9257;
+}
+
+/* Sign-in page styles */
+.sign-in-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #bba281;
+}
+
+/* Box for the signin page */
+.sign-in-box {
+  background-color: #d8ba93;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(68, 68, 68);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title styling */
+.sign-in-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Form styling */
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input styling */
+.sign-in-input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #000000; /* Darker border */
+  border-radius: 4px;
+  background-color: #c59e6b; /* Match box background */
+  color: #ffffff; /* Light text color */
+}
+
+.sign-in-input::placeholder {
+  color: #ffffff; /* Placeholder color */
+}
+
+/* Button styling */
+.sign-in-button {
+  background-color: #c59e6b;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #be9257;
+}
+
+/* Loading and error messages */
+p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+/* Already have an account button */
+.already-account {
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  color: #007bff; /* Change color to a typical link color */
+  text-decoration: underline; /* Add underline to mimic link appearance */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.already-account:hover {
+  color: #0056b3; /* Darker color on hover for better UX */
+}
+
+.navbar {
+  position: fixed; 
+  top: 0;          
+  left: 0;         
+  width: 100%;     
+}
