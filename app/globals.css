@@ -353,9 +353,8 @@ p {
   margin-bottom: 20px;
   text-align: center;
   animation:
-    typing 3.5s steps(30, end),
-    blink-caret 0.75s step-end infinite;
-  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white;
+    typing 3.5s steps(90, end),
+    blink-caret 1.5s step-end infinite;
 }
 
 @keyframes typing {

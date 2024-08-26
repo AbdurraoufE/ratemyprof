@@ -157,11 +157,10 @@ export default function Home() {
       <Box
         width="100%"
         py={1}
-        bgcolor="black"
+        bgcolor="aed49b"
         color="white"
         textAlign="center"
       >
-        <Typography variant="body2" sx={{ fontSize: "0.75rem" }}>© 2024 Team Name | Headstarter Fellowship</Typography>
       </Box>
     </Box>
   );
