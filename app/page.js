@@ -62,7 +62,7 @@ export default function Home() {
 
   // check if user is authenticated
   if (!user && !userSession) {
-    router.push("/signup")
+    router.push("/landingpage")
   }
 
   useEffect(() => {

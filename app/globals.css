@@ -200,3 +200,156 @@ p {
   left: 0;         
   width: 100%;     
 }
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Navbar Links as Buttons */
+.navbar-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Navbar Button */
+.navbar-button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  background-color: #0daa6e;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-button:hover {
+  background-color: #24a57e;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  padding-top: 4rem;
+}
+
+.landing-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.landing-content p {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 100;
+    transform: translateY(-400px);
+  }
+  to {
+    opacity: 50;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-links {
+    gap: 1rem;
+  }
+
+  .landing-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .landing-content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-links {
+    flex-direction: row; /* Ensure buttons stay in a row */
+    gap: 0.5rem; /* Reduce gap for smaller screens */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center; /* Center buttons */
+  }
+
+  .navbar-button {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem 0.75rem; /* Adjust padding for smaller screens */
+  }
+}
+
+/* already have an account  */
+.already-account {
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  color: #007bff; /* Change color to a typical link color */
+  text-decoration: underline; /* Add underline to mimic link appearance */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.already-account:hover {
+  color: #0056b3; /* Darker color on hover for better UX */
+}
