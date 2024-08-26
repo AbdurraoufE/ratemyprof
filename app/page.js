@@ -91,6 +91,7 @@ export default function Home() {
         <Typography variant="h3" className="typing">
           Rate My Professor AI
         </Typography>
+          <Button className="signout" onClick={() => router.push("/landingpage")}>Sign Out</Button>
       </Box>
 
       <Stack
