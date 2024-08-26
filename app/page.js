@@ -103,7 +103,7 @@ export default function Home() {
           onClick={() => {
             signOut(auth);
             sessionStorage.removeItem("user");
-            router.push("/signup");
+            router.push("/landingpage");
           }}
         >
           Sign Out

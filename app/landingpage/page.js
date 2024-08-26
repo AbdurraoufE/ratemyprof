@@ -30,7 +30,7 @@ const LandingPage = () => {
   return (
     <div className="landing-container">
       <nav className="navbar">
-        <div className="navbar-brand">Rate My Prof</div>
+        <div className="navbar-brand">Rate My Professor</div>
         <div className="navbar-links">
           {user ? (
             <button className="navbar-button" onClick={handleSignOut}>
