@@ -1,5 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "PT Serif Caption", sans-serif;
+}
+
+body {
+  font-family: "PT Serif Caption", sans-serif;
+  background-color: #5a3c3c;
+  color: #f4f4f9;
+}
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif Caption", sans-serif;
+}
+
+body {
+  font-family: "PT Serif Caption", sans-serif;
+  background-color: #2f455c;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sign-Up Page Styles */
+.sign-up-container {
+  font-family: "PT Serif Caption", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1e738894;
+  width: 100%;
+}
+
+/* Box styling for the sign-up form BOX*/
+.sign-up-box {
+  font-family: "PT Serif Caption", sans-serif;
+  background-color: #2a4758a8;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgb(63, 109, 177);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Title styling */
+.sign-up-title {
+  font-family: "PT Serif Caption", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Form styling */
+.sign-up-form {
+  font-family: "PT Serif Caption", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input styling */
+.sign-up-input {
+  font-family: "PT Serif Caption", sans-serif;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: #48869e;
+  color: #ffffff;
+}
+
+.sign-up-input::placeholder {
+  color: #ffffff;
+}
+
+/* Button styling */
+.sign-up-button {
+  font-family: "PT Serif Caption", sans-serif;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #2b6f8a;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-button:hover {
+  background-color: #136286;
+}
+
+/* Sign-in page styles */
+.sign-in-container {
+  font-family: "PT Serif Caption", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #1e738894;
+}
+
+/* Box for the sign-in page */
+.sign-in-box {
+  font-family: "PT Serif Caption", sans-serif;
+  background-color: #2a4758a8;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(63, 109, 177);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title styling */
+.sign-in-title {
+  font-family: "PT Serif Caption", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Form styling */
+.sign-in-form {
+  font-family: "PT Serif Caption", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input styling */
+.sign-in-input {
+  font-family: "PT Serif Caption", sans-serif;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: #48869e;
+  color: #ffffff;
+}
+
+.sign-in-input::placeholder {
+  color: #ffffff;
+}
+
+/* Button styling */
+.sign-in-button {
+  font-family: "PT Serif Caption", sans-serif;
+  background-color: #2b6f8a;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #136286;
+}
+
+/* Loading and error messages */
+p {
+  font-family: "PT Serif Caption", sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Already have an account button */
+.already-account {
+  font-family: "PT Serif Caption", sans-serif;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.already-account:hover {
+  color: #0056b3;
+}
+
+.navbar {
+  font-family: "PT Serif Caption", sans-serif;
+  position: fixed; 
+  top: 0;          
+  left: 0;         
+  width: 100%;     
 }
