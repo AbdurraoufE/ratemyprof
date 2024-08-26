@@ -1,7 +1,8 @@
 "use client"
 import Image from "next/image";
 import { useState } from "react"; 
-import {Box, Stack, TextField, Button} from "@mui/material"
+import {Box, Stack, TextField, Button, Typography, IconButton} from "@mui/material"
+import SendIcon from '@mui/icons-material/Send';
 
 export default function Home() {
   const [messages, setMessages] = useState([
@@ -12,6 +13,7 @@ export default function Home() {
   ])
 
   const [message, setMessage] = useState("")
+
   const sendMessage = async () => {
     setMessages((messages)=>[
       ...messages, //put the previous messages, then add a new one
@@ -19,7 +21,7 @@ export default function Home() {
       {role: "assistant", content: ""},
     ])
     setMessage("")
-
+  
     const response = fetch("/api/chat", {
       method: "POST",
       headers: {
@@ -57,18 +59,32 @@ export default function Home() {
       height="100vh"
       display="flex"
       flexDirection="column"
-      justifyContent="center"
+      justifyContent="space-between"
       alignItems="center"
     >
+      {/* Typing Animation Title */}
+      <Box
+        width="100%"
+        py={2}
+        textAlign="center"
+      >
+        <Typography variant="h3" className="typing">
+          Rate My Professor AI
+        </Typography>
+      </Box>
+
       <Stack
         direction="column"
         width="500px"
-        height="700px"
+        height="600px"
         border="1px solid black"
+        borderRadius={8}
+        boxShadow={3}
         p={2}
         spacing={3}
         display="flex"
         flexDirection="column"
+        bgcolor="white"
       >
         <Stack 
           direction="column" 
@@ -90,10 +106,11 @@ export default function Home() {
                   bgcolor={
                     message.role === "assistant" ? "primary.main" : "secondary.main"
                   }
-                  color="white" //text color
+                  color="white"
                   borderRadius={16}
-                  p={3}
-                  maxWidth="80%" // optional, to ensure messages don't overflow
+                  p={2}
+                  maxWidth="80%"
+                  boxShadow={2}
                 >
                   {message.content}
                 </Box>
@@ -103,18 +120,29 @@ export default function Home() {
         </Stack>
         <Stack direction="row" spacing={2} mt={2}>
           <TextField
-            label="Message"
+            label="Type your message..."
             fullWidth
             value={message}
             onChange={(e) => {
               setMessage(e.target.value);
             }}
           />
-          <Button variant="contained" onClick={sendMessage}>
-            Send
-          </Button>
+          <IconButton color="primary" onClick={sendMessage}>
+            <SendIcon />
+          </IconButton>
         </Stack>
       </Stack>
+
+      {/* Footer */}
+      <Box
+        width="100%"
+        py={1}
+        bgcolor="black"
+        color="white"
+        textAlign="center"
+      >
+        <Typography variant="body2" sx={{ fontSize: "0.75rem" }}>© 2024 Team Name | Headstarter Fellowship</Typography>
+      </Box>
     </Box>
   );
 }
