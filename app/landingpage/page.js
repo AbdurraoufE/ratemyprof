@@ -49,7 +49,7 @@ const LandingPage = () => {
         </div>
       </nav>
       <div className="landing-content">
-        <h1>Welcome to Rate My Professor</h1>
+        <h1>Welcome to AI Rate My Professor</h1>
         <p>Your reliable AI Chat Assistant</p>
       </div>
     </div>

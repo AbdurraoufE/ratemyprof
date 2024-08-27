@@ -63,7 +63,8 @@ const SignIn = () => {
             required
           />
           <button type="submit" className="sign-in-button">Sign In</button>
-          <p className="already-account" onClick={() => router.push("/signup")}> Don&apos;t have an account?</p>
+          <p className='signupsignintext'>Don&apos;t have an account?</p>
+          <p className="already-account" onClick={() => router.push("/signup")}> Sign Up</p>
         </form>
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error}</p>}
