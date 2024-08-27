@@ -21,6 +21,6 @@
 
 # Contributers 👥
 - Abdurraouf Etagiuri
-- Sebastien
+- Sebastien Adam
 - Yusuf
 - Rahat Moktadir 
